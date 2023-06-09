@@ -14,3 +14,7 @@ from (select s.sid, s.sname, b.sscore, dense_rank() over (partition by departmen
                               join course c on score.cid = c.cid
                      where c.cid = 2 ) b on s.sid = b.sid where department='cs') as k
 where rk = 1;
+
+
+print('python bigdate')
+print('hello world')
